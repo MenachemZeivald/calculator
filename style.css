@@ -1,0 +1,133 @@
+@import url('http://fonts.cdnfonts.com/css/ds-digital');
+
+* {
+    box-sizing: border-box;
+}
+
+.centeredFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    margin: 0;
+    height: 90vh;
+    width: 100vw;
+}
+
+#all {
+    height: 80vh;
+    width: 50vh;
+    background-color: blue;
+    border-radius: 0.5vw;
+    box-shadow: 2px 2px 5px rgb(54, 183, 247);
+    flex-wrap: wrap;
+}
+
+#screen {
+    height: 15%;
+    width: 95%;
+    background-color: white;
+    border-radius: 0.5vw;
+    text-align: end;
+    flex-wrap: wrap;
+    font-family: 'DS-Digital', sans-serif;
+}
+
+#screen>* {
+    border: 1px solid black;
+}
+
+#upper {
+    height: 33%;
+    width: 100%;
+    padding-right: 11%;
+    padding-top: 1%;
+    font-size: 2.5vh;
+}
+
+#lower {
+    height: 67%;
+    width: 80%;
+    background-color: whitesmoke;
+    font-size: 5vh;
+    padding-top: 2%;
+    border-radius: 0.5vw;
+}
+
+#sidescrn {
+    height: 67%;
+    width: 20%;
+    background-color: whitesmoke;
+    font-size: 5vh;
+    padding-top: 2%;
+    border-radius: 0.5vw;
+    text-align: center;
+}
+
+.line {
+    height: 1px;
+    width: 70%;
+    background-image: radial-gradient(white, blue);
+}
+
+#nums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2vh;
+    height: 50%;
+    width: 80%;
+}
+
+#nums>div:nth-child(13),
+#nums>div:nth-child(14) {
+    width: 45%;
+}
+
+.button {
+    height: 4vh;
+    background-color: rgb(1, 1, 136);
+    border-radius: 0.5vh;
+    box-shadow: 0px 0px 1vh white;
+    color: azure;
+    text-align: center;
+    line-height: 4vh;
+}
+
+.num {
+    width: 25.1%;
+}
+
+#actions {
+    height: 25%;
+    width: 80%;
+    font-size: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#actions>div:nth-child(5) {
+    width: 100%;
+}
+
+.act {
+    width: 45%;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    background-color: rgb(1, 1, 136, 50%);
+}
+
+@media screen and (max-width: 660px) {
+    #all {
+        height: 90vh;
+        width: 90vw;
+        margin-top: 5vh;
+    }
+}
